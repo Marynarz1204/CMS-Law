@@ -1,0 +1,12 @@
+﻿@page 
+@model LawClient.Pages.Home.IndexModel
+@{
+    ViewData["title"] = "Home Page";
+    ViewData["P"] = Model.ParentValue;
+    ViewData["C"] = Model.ChildValue;
+}
+
+<!-- Swiper-->
+
+<div id="react_root"></div>
+<script src="/app/mainPage-bundle.js"></script>

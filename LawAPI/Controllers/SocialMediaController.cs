@@ -1,0 +1,203 @@
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using LawAPI.Database.Entities;
+using LawAPI.Dto.SocialMedia;
+using LawAPI.ORM;
+using LawAPI.Repositories.BaseEntityRepositories;
+using LawAPI.Repositories.EntityWithPictureRepositories;
+using Swashbuckle.Swagger.Annotations;
+using System.Net;
+
+namespace LawAPI.Controllers
+{
+    [ApiController]
+    [Route("[controller]")]
+    public class SocialMediaController : ControllerBase
+    {
+
+        private readonly ILogger<SocialMediaController> logger;
+        private readonly string workingDirectory;
+        private readonly ITransactionCoordinator transactionCoordinator;
+        private readonly ISocialMediaRepository socialMediaRepository;
+        private readonly IPictureRepository pictureRepository;
+        private readonly ITeamMemberRepository teamMemberRepository;
+
+        public SocialMediaController(ILogger<SocialMediaController> logger,
+            ITransactionCoordinator transactionCoordinator,
+            ISocialMediaRepository socialMediaRepository,
+            IPictureRepository pictureRepository,
+            ITeamMemberRepository teamMemberRepository)
+        {
+            this.logger = logger;
+            this.transactionCoordinator = transactionCoordinator;
+            this.socialMediaRepository = socialMediaRepository;
+            this.pictureRepository = pictureRepository;
+            this.teamMemberRepository = teamMemberRepository;
+            workingDirectory = AppContext.BaseDirectory;
+        }
+
+        [HttpPost]
+        [Route("/AddSocialMedia")]
+        [Authorize]
+        [SwaggerResponse(HttpStatusCode.OK, "SocialMedia inserted successfully")]
+        public async Task<ActionResult> AddSocialMedia([FromBody] AddSocialMediaDto socialMediaDto)
+        {
+            var socialMedia = await GetSocialMedia(socialMediaDto);
+            await transactionCoordinator.InCommitScopeAsync(async session =>
+            {
+                await socialMediaRepository.InsertAsync(socialMedia, session);
+            });
+
+            return Ok("SocialMedia inserted successfully");
+        }
+
+        [HttpGet]
+        [Route("/GetAllMainSocialMedia")]
+        [SwaggerResponse(HttpStatusCode.OK, "SocialMedia List")]
+        public async Task<ActionResult<IList<SocialMediaDto>>> GetAllMainSocialMedia()
+        {
+            IList<SocialMediaDto> socialMediaDtoList = new List<SocialMediaDto>(); ;
+            await transactionCoordinator.InRollbackScopeAsync(async session =>
+            {
+                var socialMediaList = await socialMediaRepository.GetAllMainSocialMedia(session);
+                if(socialMediaList != null)
+                    socialMediaDtoList = socialMediaList.Select(GetSocialMediaDto).ToList();
+            });
+
+            return Ok(socialMediaDtoList);
+        }
+
+        [HttpGet]
+        [Route("/GetSocialMediaById/{Id}")]
+        [SwaggerResponse(HttpStatusCode.OK, "Social Media got successfully", typeof(SocialMediaDto))]
+        public async Task<ActionResult<SocialMediaDto>> GetSocialMedia([FromRoute] int Id)
+        {
+            SocialMediaDto? socialMediaDto = null;
+            await transactionCoordinator.InRollbackScopeAsync(async session =>
+            {
+                var socialMedia = await socialMediaRepository.GetByIdAsync(Id, session);
+                if (socialMedia != null)
+                    socialMediaDto = GetSocialMediaDto(socialMedia);
+            });
+
+            return Ok(socialMediaDto);
+        }
+
+
+        [HttpGet]
+        [Route("/GetAllSocialMediaList")]
+        [SwaggerResponse(HttpStatusCode.OK, "SocialMedia List")]
+        public async Task<ActionResult<IList<SocialMediaDto>>> GetAllSocialMediaList()
+        {
+            IList<SocialMediaDto> socialMediaDtoList = new List<SocialMediaDto>();
+            await transactionCoordinator.InRollbackScopeAsync(async session =>
+            {
+                var socialMediaList = await socialMediaRepository.GetAllAsync(session);
+                if (socialMediaList != null)
+                    socialMediaDtoList = socialMediaList.Select(GetSocialMediaDto).ToList();
+            });
+
+            return Ok(socialMediaDtoList);
+        }
+
+        [HttpGet]
+        [Route("/GetVisibleSocialMediaList")]
+        [SwaggerResponse(HttpStatusCode.OK, "SocialMedia List")]
+        public async Task<ActionResult<IList<SocialMediaDto>>> GetVisibleSocialMediaList()
+        {
+            IList<SocialMediaDto> socialMediaDtoList = new List<SocialMediaDto>(); ;
+            await transactionCoordinator.InRollbackScopeAsync(async session =>
+            {
+                var socialMediaList = await socialMediaRepository.GetVisibleAsync(session);
+                if (socialMediaList != null)
+                    socialMediaDtoList = socialMediaList.Select(GetSocialMediaDto).ToList();
+            });
+
+            return Ok(socialMediaDtoList);
+        }
+
+        [HttpPatch]
+        [Route("/UpdateSocialMedia")]
+        [Authorize]
+        [SwaggerResponse(HttpStatusCode.OK, "SocialMedia updated successfully")]
+        [SwaggerResponse(HttpStatusCode.BadRequest, "SocialMedia not found")]
+        public async Task<ActionResult> UpdateSocialMedia([FromBody] SocialMediaDto socialMediaDto)
+        {
+            var socialMedia = await transactionCoordinator.InRollbackScopeAsync(async session =>
+            {
+                return await socialMediaRepository.GetByIdAsync(socialMediaDto.Id, session);
+            });
+
+            if (socialMedia == null)
+                return BadRequest("SocialMedia not found");
+
+            await UpdateSocialMedia(socialMedia, socialMediaDto);
+            await transactionCoordinator.InCommitScopeAsync(async session =>
+            {
+                await socialMediaRepository.UpdateAsync(socialMedia, session);
+            });
+
+            return Ok("SocialMedia updated successfully");
+        }
+
+        private async Task UpdateSocialMedia(SocialMedia socialMedia, SocialMediaDto socialMediaDto)
+        {
+            await transactionCoordinator.InRollbackScopeAsync(async session =>
+            {
+                socialMedia.Name = socialMediaDto.Name;
+                socialMedia.Link = socialMediaDto.Link;
+                socialMedia.IsMain = socialMediaDto.IsMain;
+                socialMedia.IsVisible = socialMediaDto.IsVisible;
+                socialMedia.PictureList = await pictureRepository.GetPictureListByIdListAsync(socialMediaDto.PictureIdList ?? new List<int>(), session);
+                socialMedia.TeamMember = await teamMemberRepository.GetByIdAsync(socialMediaDto.TeamMemberId ?? 0, session);
+            });
+        }
+
+        [HttpDelete]
+        [Route("/DeleteSocialMedia/{socialMediaId}")]
+        [Authorize]
+        [SwaggerResponse(HttpStatusCode.OK, "SocialMedia was deleted successfully")]
+        public async Task<ActionResult> DeletSocialMedia([FromRoute] int socialMediaId)
+        {
+            await transactionCoordinator.InCommitScopeAsync(async session =>
+            {
+                await socialMediaRepository.DeleteAsync(socialMediaId, session);
+            });
+
+            return Ok("SocialMedia was deleted successfully");
+        }
+
+
+        private SocialMediaDto GetSocialMediaDto(SocialMedia socialMedia)
+        {
+            return new SocialMediaDto()
+            {
+                Id = socialMedia.Id,
+                Name = socialMedia.Name,
+                Link = socialMedia.Link,
+                IsMain = socialMedia.IsMain,
+                IsVisible = socialMedia.IsVisible,
+                PictureIdList = socialMedia.PictureList?.Select(x => x.Id)?.ToList(),
+                TeamMemberId = socialMedia.TeamMember?.Id
+            };
+        }
+
+        private async Task<SocialMedia> GetSocialMedia(AddSocialMediaDto socialMediaDto)
+        {
+            return await transactionCoordinator.InRollbackScopeAsync(async session =>
+            {
+                return new SocialMedia()
+                {
+                    Name = socialMediaDto.Name,
+                    Link = socialMediaDto.Link,
+                    IsMain = socialMediaDto.IsMain,
+                    IsVisible = socialMediaDto.IsVisible,
+                    IsDeleted = false,
+                    PictureList = await pictureRepository.GetPictureListByIdListAsync(socialMediaDto.PictureIdList ?? new List<int>(), session),
+                    TeamMember = await teamMemberRepository.GetByIdAsync(socialMediaDto.TeamMemberId ?? 0, session)
+
+                };
+            });
+        }
+    }
+}

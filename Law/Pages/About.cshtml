@@ -1,0 +1,10 @@
+﻿@page 
+@model LawClient.Pages.AboutModel
+@{
+    ViewData["title"] = "About";
+    ViewData["P"] = Model.ParentValue;
+    ViewData["C"] = Model.ChildValue;
+}
+<div id="react_root"></div>
+<script src="/app/aboutPage-bundle.js"></script>
+

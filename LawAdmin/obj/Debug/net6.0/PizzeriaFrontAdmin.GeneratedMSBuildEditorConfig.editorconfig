@@ -1,0 +1,148 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PizzeriaFrontAdmin
+build_property.RootNamespace = PizzeriaFrontAdmin
+build_property.ProjectDir = C:\Users\micha\Desktop\CMS\Cms-main\Cms-main\backend\PizzeriaAPI\PizzeriaFrontAdmin\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\micha\Desktop\CMS\Cms-main\Cms-main\backend\PizzeriaAPI\PizzeriaFrontAdmin
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/Account/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/PageElements/Banners.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVsZW1lbnRzXEJhbm5lcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/PageElements/Categories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVsZW1lbnRzXENhdGVnb3JpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/PageElements/ContactInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVsZW1lbnRzXENvbnRhY3RJbmZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/PageElements/Gallery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVsZW1lbnRzXEdhbGxlcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/PageElements/InformationTab.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVsZW1lbnRzXEluZm9ybWF0aW9uVGFiLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/PageElements/KeyValue.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVsZW1lbnRzXEtleVZhbHVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/PageElements/Menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVsZW1lbnRzXE1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/PageElements/Pictures.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVsZW1lbnRzXFBpY3R1cmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/PageElements/Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVsZW1lbnRzXFByb2R1Y3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/PageElements/Roles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVsZW1lbnRzXFJvbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/PageElements/Sliders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVsZW1lbnRzXFNsaWRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/PageElements/SocialMedia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVsZW1lbnRzXFNvY2lhbE1lZGlhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/PageElements/TabSlider.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVsZW1lbnRzXFRhYlNsaWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/PageElements/TeamMember.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVsZW1lbnRzXFRlYW1NZW1iZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/PageElements/Testimonials.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVsZW1lbnRzXFRlc3RpbW9uaWFscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/Pages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/Shared/_FixedPlugin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9GaXhlZFBsdWdpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/Shared/_Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9OYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/Shared/_Scripts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9TY3JpcHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/PizzeriaAPI/PizzeriaFrontAdmin/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-cp90rsyvd0

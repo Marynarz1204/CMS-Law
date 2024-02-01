@@ -1,0 +1,64 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LawClient
+build_property.RootNamespace = LawClient
+build_property.ProjectDir = C:\Users\micha\Desktop\CMS\Cms-main\Cms-main\backend\LawAPI\Law\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\micha\Desktop\CMS\Cms-main\Cms-main\backend\LawAPI\Law
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/LawAPI/Law/Pages/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/LawAPI/Law/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/LawAPI/Law/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/LawAPI/Law/Pages/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/LawAPI/Law/Pages/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/LawAPI/Law/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/LawAPI/Law/Pages/Templates/CategoryPageTemplate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVtcGxhdGVzXENhdGVnb3J5UGFnZVRlbXBsYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/LawAPI/Law/Pages/Templates/GalleryPageTemplate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVtcGxhdGVzXEdhbGxlcnlQYWdlVGVtcGxhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/LawAPI/Law/Pages/Templates/PageTemplate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVtcGxhdGVzXFBhZ2VUZW1wbGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/LawAPI/Law/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/LawAPI/Law/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/micha/Desktop/CMS/Cms-main/Cms-main/backend/LawAPI/Law/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-6e3vdzlvcb

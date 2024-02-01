@@ -1,0 +1,246 @@
+.section-title {
+    width: 100%;
+    font-size: 19px;
+
+}
+
+.section-subtext {
+    width: 100%;
+    font-size: 11px;
+    color: #aeaeae;
+    margin-bottom: 25px;
+    ;
+}
+
+.settings-section {
+    padding: 15px;
+}
+
+.section-form {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    gap: 10px;
+
+    &>div {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.form-content {
+
+    .row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50px 200px auto;
+    }
+}
+
+.generic-row {
+    &.row {
+        display: grid;
+        gap: 10px;
+        align-content: flex-end;
+        grid-template-columns: repeat(8, 200px);
+    }
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.section-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.section-form+.picture-list {
+    max-height: 450px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 15px;
+        border-radius: 50px;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 50px;
+        background: #eee;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 50px;
+        background: #000000aa;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+.custom-scroll {
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 15px;
+        border-radius: 50px;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 50px;
+        background: #eee;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 50px;
+        background: #000000aa;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+.react-page {
+    .row {
+        display: grid;
+    }
+}
+
+.menu-element-row.row {
+    grid-template-columns: 50px 150px 200px 200px 100px 150px 150px 300px;
+
+}
+
+.social-home-row.row {
+    grid-template-columns: 50px 200px 300px 300px;
+
+    &>div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+
+    }
+
+
+    label {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+}
+.teammember-row.row{
+    grid-template-columns: 50px 150px 150px 150px 150px 70px 100px 200px auto;
+
+}
+
+.generic-list {
+    padding: 15px;
+}
+
+.banners-row.row {
+    grid-template-columns: 50px 150px auto 150px 70px 200px 300px;
+
+}
+
+.category-row.row {
+    display: grid;
+    grid-template-columns: 50px 150px 150px 150px 150px 150px 300px;
+
+}
+
+.sliders-row.row {
+    grid-template-columns: 50px 200px 250px 100px 300px auto;
+}
+
+.selected-banners {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2px;
+    overflow-x: scroll;
+}
+
+.product-row.row {
+    display: grid;
+    grid-template-columns: 50px 100px 100px 100px auto repeat(5, 100px) 300px;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+textarea.input-field{
+    width: 100%;
+}
+
+.form-top-container+div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+    &.picture-list {
+        display: flex;
+        gap: 5px;
+    }
+}
+
+.generic-list {
+    .row {
+        display: grid;
+        padding: 5px 0;
+
+    }
+
+    .form-content {
+        &:hover {
+            background-color: #d5defd7d;
+        }
+    }
+}
+
+.testimonial-row.row {
+    grid-template-columns: 50px 200px 200px auto 70px 150px 150px 300px;
+}
+
+.gallery-row.row {
+    grid-template-columns: 50px 150px auto auto 70px 100px 300px;
+}
+
+.information-tab-row.row {
+    grid-template-columns: 50px auto 200px 70px 130px 400px;
+
+}
+
+.tab-slider-row.row {
+    grid-template-columns: 50px 150px 70px 150px auto 300px;
+}
+
+.contact-row.row {
+    grid-template-columns: 50px 150px 70px 150px 300px;
+}
+
+.page-row.row {
+    grid-template-columns: 50px 150px 70px 150px 300px;
+}
+
+.role-row.row {
+    grid-template-columns: 50px 150px 70px 300px;
+}
+
+#react_root {
+    .card {
+        min-width: 100%;
+        width: fit-content;
+    }
+}
+
+.social-media-content {
+    max-height: 200px;
+    overflow-y: scroll;
+    justify-content: flex-start !important;
+}

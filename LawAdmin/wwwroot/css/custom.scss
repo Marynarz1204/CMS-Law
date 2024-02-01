@@ -1,0 +1,161 @@
+@import './popup';
+@import './pictures';
+@import './pageSettings';
+@import './socialList';
+@import './gallery';
+
+.navbar-vertical.navbar-expand-xs .navbar-collapse {
+    height: unset !important;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    input[type=checkbox] {
+        width: fit-content;
+    }
+}
+
+.number-of-pics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-comp {
+    width: 100%;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #444444aa;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555555aa;
+    }
+}
+
+.side-nav-separator {
+    margin-top: 15px;
+}
+
+.input-wrapper {
+    width: 100%;
+
+    input {
+        width: 100%;
+    }
+}
+
+a.normal-link {
+    color: #0060ca !important;
+    text-decoration: underline;
+
+}
+
+.react-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+    .card {
+        padding: 25px;
+    }
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+        height: 100%;
+    }
+}
+
+form.account-form {
+    margin: 200px 0 400px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    button {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.account-form-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img-container {
+        width: fit-content;
+    }
+}
+
+.tiny-editor {
+    &+.tox.tox-tinymce {
+        padding: 0;
+    }
+}
+
+form,
+.form-top-container {
+
+    .btn {
+        width: fit-content !important;
+    }
+
+    .btn-save {
+        background-color: #0060ce;
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+            background-color: #0060ca;
+        }
+    }
+
+    .btn-delete {
+        background-color: #ff2958;
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+            background-color: #ff2958;
+        }
+    }
+}
+
+.button-col {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-top-container {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}

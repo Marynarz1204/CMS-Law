@@ -1,0 +1,7 @@
+﻿namespace LawAPI.Settings
+{
+    public class UrlSettings
+    {
+        public string FrontAdminBaseUrl { get; set; }
+    }
+}
